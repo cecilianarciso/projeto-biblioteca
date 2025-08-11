@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Comic Sans MS', 'Marker Felt', cursive, sans-serif;
+    background-color: #f0f7e6;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M30,50 Q50,30 70,50 T90,50" stroke="%23d4e8bf" fill="none" stroke-width="2"/></svg>');
+    margin: 0;
+    padding: 20px;
+    color: #5a3e36;
+}
+
+h1 {
+    color: #4a6b3a;
+    text-shadow: 2px 2px 0px #e8d5b5;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff9e6;
+    padding: 25px;
+    border-radius: 50% 50% 20px 20px;
+    box-shadow: 
+        0 4px 8px rgba(0,0,0,0.1),
+        inset 0 -10px 20px #e8d5b5;
+    border: 3px dashed #d4e8bf;
+    position: relative;
+    overflow: hidden;
+}
+
+form:after {
+    content: "🐾";
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    opacity: 0.3;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #6b8e23;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #c9d7b7;
+    border-radius: 15px;
+    background: #fffff8;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus {
+    border-color: #8fbc8f;
+    outline: none;
+    box-shadow: 0 0 0 3px #e8d5b5;
+    background: #fff;
+}
+
+
+button {
+    background: #8fbc8f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #6b8e23;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    top: -10px;
+    left: 30%;
+}
+
+
+form[action="index.php"] button {
+    background: #e8d5b5;
+    color: #5a3e36;
+}
+
+form[action="index.php"] button:hover {
+    background: #d4c0a0;
+}
+
+
+.decor-cat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    form {
+        border-radius: 20px;
+    }
+}

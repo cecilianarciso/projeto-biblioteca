@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "isbn": "9788535910662",
+    "ano": 1899
+  },
+  {
+    "id": 2,
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "isbn": "9780451524935",
+    "ano": 1949
+  },
+  {
+    "id": 3,
+    "titulo": "O Pequeno Príncipe",
+    "autor": "Antoine de Saint-Exupéry",
+    "isbn": "9788532288481",
+    "ano": 1943
+  }
+]

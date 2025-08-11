@@ -1,0 +1,131 @@
+/* TABELA.CSS - Estilo "Cat & Plant" para tabelas */
+body {
+    font-family: 'Comic Sans MS', 'Marker Felt', cursive, sans-serif;
+    background-color: #f0f7e6;
+    margin: 0;
+    padding: 20px;
+    color: #5a3e36;
+}
+
+h1, h2 {
+    color: #4a6b3a;
+    text-shadow: 2px 2px 0px #e8d5b5;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+/* Link "Adicionar livro" */
+a[href="form_criar.php"] {
+    display: inline-block;
+    background: #8fbc8f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+a[href="form_criar.php"]:hover {
+    background: #6b8e23;
+    transform: translateY(-2px);
+}
+
+/* Tabela no estilo "canteiro de plantas" */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 25px 0;
+    background: #fff9e6;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th {
+    background: linear-gradient(to bottom, #8fbc8f, #6b8e23);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e8d5b5;
+}
+
+tr:nth-child(even) {
+    background: #f5f5e6;
+}
+
+tr:hover {
+    background: #e8f4e0;
+}
+
+/* Botões de ação */
+.btn-actions a {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-right: 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-edit {
+    background: #f0c14b;
+    color: #5a3e36;
+}
+
+.btn-edit:hover {
+    background: #e2b13c;
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+}
+
+.btn-exit {
+    background: #e8d5b5;
+    color: #5a3e36;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.btn-exit:hover {
+    background: #d4c0a0;
+}
+
+/* Gato decorativo */
+.decor-cat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .decor-cat {
+        display: none;
+    }
+}
